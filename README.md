@@ -1,7 +1,6 @@
 # HashSet is a php class for create a hash.
 
-<code>include('../hash.set.php');</code>
+    include('../hash.set.php');
+    $hash_set = new hash;
+    $hash=str_replace('=','',base64_encode($hash_set->catch('string',1,'key','iv')));
 
-<code>$hash_set = new hash;</code>
-
-<code>$hash=str_replace('=','',base64_encode($hash_set->catch('string',1,'key','iv')));</code>
