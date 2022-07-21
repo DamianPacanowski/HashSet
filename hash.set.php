@@ -8,10 +8,10 @@
 		private$output;	
 		public function catch($string,$action,$key,$iv) 
 		{
-		$this->string=$string;
-		$this->action=$action;
+			$this->string=$string;
+			$this->action=$action;
 			$this->key=$key;
-		$this->iv=$iv;
+			$this->iv=$iv;
 			if(self::crypt()) 
 			{
 				$output=self::crypt();
@@ -20,9 +20,9 @@
 			} 
 			else 
 			{
-		    return false; 
+				return false; 
+			}
 		}
-	    }
 		private function crypt() 
 		{
 			$encrypt_method='AES-256-CBC';
